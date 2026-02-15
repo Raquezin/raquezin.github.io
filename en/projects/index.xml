@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Projects on Fernando Giráldez</title><link>https://raquezin.github.io/en/projects/</link><description>Recent content in My Projects on Fernando Giráldez</description><generator>Hugo</generator><language>en</language><copyright>© 2026 Fernando Giráldez Curquejo</copyright><lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://raquezin.github.io/en/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>PalistApp</title><link>https://raquezin.github.io/en/projects/palistapp/</link><pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate><guid>https://raquezin.github.io/en/projects/palistapp/</guid><description>&lt;p&gt;A platform for tracking results, races, and competitors in Spanish canoeing/kayaking events.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Status:&lt;/strong&gt; Active development (since May 2024) · &lt;a href="https://www.palistapp.com"&gt;palistapp.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="what-it-is"&gt;What it is&lt;/h2&gt;
+&lt;p&gt;PalistApp centralizes Spanish canoeing data: competition results, athlete profiles, and race calendars. Before PalistApp, this information was scattered and hard to access.&lt;/p&gt;
+&lt;h2 id="tech-stack"&gt;Tech stack&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Data:&lt;/strong&gt; Scraping + manual cleaning and validation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Database:&lt;/strong&gt; PostgreSQL&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend:&lt;/strong&gt; Go API (low latency)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Frontend:&lt;/strong&gt; React/TypeScript + Vite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="numbers"&gt;Numbers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;~100,000 requests processed in 4 days&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;My biggest project to date.&lt;/p&gt;</description></item></channel></rss>
