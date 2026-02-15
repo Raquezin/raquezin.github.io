@@ -1,0 +1,59 @@
+baseURL: "https://raquezin.github.io/"
+defaultContentLanguage: "es"
+enableRobotsTXT: true
+taxonomies: {}
+
+params:
+  favicon: icons/logo.svg
+  social:
+    github: "raquezin"
+    linkedin: "fgiraldezc"
+    email: "fernandogiraldezcontacto@gmail.com"
+
+languages:
+  es:
+    languageName: "🇪🇸"
+    weight: 1
+    title: "Fernando Giráldez"
+    copyright: "© 2026 Fernando Giráldez Curquejo"
+    contentDir: content/es
+    menu:
+      main:
+        - name: "Sobre mí"
+          url: "/about/"
+          weight: 10
+        - name: "Proyectos"
+          url: "/projects/"
+          weight: 20
+        - name: "Blog"
+          url: "/blog/"
+          weight: 30
+        - name: "Roadmap"
+          url: "/roadmap/"
+          weight: 40
+    params:
+      madeWith: "Hecho con Hugo"
+      description: "Portfolio personal de Fernando Giráldez. Estudiante de Ingeniería Informática en la Universidad de Sevilla."
+  en:
+    languageName: "🇬🇧"
+    weight: 2
+    title: "Fernando Giráldez"
+    copyright: "© 2026 Fernando Giráldez Curquejo"
+    contentDir: content/en
+    menu:
+      main:
+        - name: "About"
+          url: "/en/about/"
+          weight: 10
+        - name: "Projects"
+          url: "/en/projects/"
+          weight: 20
+        - name: "Blog"
+          url: "/en/blog/"
+          weight: 30
+        - name: "Roadmap"
+          url: "/en/roadmap/"
+          weight: 40
+    params:
+      madeWith: "Made with Hugo"
+      description: "Personal portfolio of Fernando Giráldez. Computer Science student at the University of Seville."

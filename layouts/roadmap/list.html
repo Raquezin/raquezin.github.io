@@ -1,0 +1,61 @@
+{{ define "head" }}
+{{ $roadmapCSS := resources.Get "css/roadmap.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $roadmapCSS.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<content>
+  {{ .Content }}
+
+  <div class="roadmap-tree">
+    {{ range $yi, $y := sort .Site.Data.roadmap.years "year" "desc" }}
+    <div class="roadmap-year">
+      <div class="roadmap-year-label">{{ $y.year }}/</div>
+      <ul class="roadmap-entries">
+        {{ range $ei, $e := collections.Reverse $y.events }}
+        {{ $lang := $.Site.Language.Lang }}
+        {{ $nameKey := printf "name_%s" $lang }}
+        {{ $dateKey := printf "date_%s" $lang }}
+        {{ $eName := or (index $e $nameKey) $e.name $e.name_es $e.name_en }}
+        {{ $eDate := or (index $e $dateKey) $e.date }}
+        {{ $presentWord := cond (eq $lang "es") "presente" "present" }}
+        {{ $eDate = replace $eDate "~" $presentWord }}
+        <li>
+          <div class="roadmap-line{{ if eq $e.status "pending" }} roadmap-pending{{ end }}">
+            <span class="roadmap-date">{{ $eDate }}</span>
+            <span class="roadmap-name">
+              {{ if $e.url }}<a href="{{ $e.url }}" target="_blank" rel="noopener">{{ $eName }}</a>{{ else }}{{ $eName }}{{ end }}
+            </span>
+          </div>
+          {{ with $e.sub }}
+          <ul class="roadmap-sub-entries">
+            {{ range $si, $s := collections.Reverse . }}
+            {{ $sName := or (index $s $nameKey) $s.name $s.name_es $s.name_en }}
+            {{ $sDate := or (index $s $dateKey) $s.date }}
+            {{ $sDate = replace $sDate "~" $presentWord }}
+            <li>
+              <div class="roadmap-sub-line">
+                <span class="roadmap-sub-date">{{ $sDate }}</span>
+                <span class="roadmap-sub-name">{{ if $s.url }}<a href="{{ $s.url }}" target="_blank" rel="noopener">{{ $sName }}</a>{{ else }}{{ $sName }}{{ end }}</span>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+
+  <script>
+    document.querySelectorAll('.roadmap-year-label').forEach(function(label) {
+      label.addEventListener('click', function() {
+        this.parentElement.classList.toggle('collapsed');
+      });
+    });
+  </script>
+</content>
+{{ end }}

@@ -1,0 +1,28 @@
+{{- $variant := .variant | default "default" -}}
+{{- $site := .site -}}
+{{- $social := $site.Params.social -}}
+{{- $github := $social.github -}}
+{{- $linkedin := $social.linkedin -}}
+{{- $email := $social.email -}}
+{{- $githubIcon := resources.Get "icons/github.svg" | fingerprint -}}
+{{- $linkedinIcon := resources.Get "icons/linkedin.svg" | fingerprint -}}
+{{- $mailIcon := resources.Get "icons/mail.svg" | fingerprint -}}
+{{- if or $github $linkedin $email -}}
+<div class="social-links{{ if eq $variant "footer" }} social-links--footer{{ end }}" aria-label="Social links">
+  {{- if $github -}}
+  <a class="social-link social-link--github" href="https://github.com/{{ $github }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+    <img src="{{ $githubIcon.RelPermalink }}" alt="GitHub" width="19" height="19" />
+  </a>
+  {{- end -}}
+  {{- if $linkedin -}}
+  <a class="social-link social-link--linkedin" href="https://linkedin.com/in/{{ $linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+    <img src="{{ $linkedinIcon.RelPermalink }}" alt="LinkedIn" width="19" height="19" />
+  </a>
+  {{- end -}}
+  {{- if $email -}}
+  <a class="social-link social-link--mail" href="mailto:{{ $email }}" aria-label="Email" title="Email">
+    <img src="{{ $mailIcon.RelPermalink }}" alt="Email" width="19" height="19" />
+  </a>
+  {{- end -}}
+</div>
+{{- end -}}

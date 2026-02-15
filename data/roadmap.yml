@@ -1,0 +1,100 @@
+# Roadmap - organizado por años como carpetas
+# Para añadir un evento: crea una entrada bajo el año correspondiente
+# Campos:
+#   name       - nombre por defecto (usado si no hay name_es/name_en)
+#   name_es    - nombre en español (opcional, sobreescribe name)
+#   name_en    - nombre en inglés (opcional, sobreescribe name)
+#   date       - fecha (obligatorio, usar ~ para "presente/present")
+#   date_es    - fecha en español (opcional, sobreescribe date)
+#   date_en    - fecha en inglés (opcional, sobreescribe date)
+#   url        - enlace (opcional)
+#   status     - "pending" para eventos futuros (opcional)
+#   sub        - lista de sub-eventos (opcional)
+
+years:
+  - year: 2026
+    events:
+      - name_es: "2º Premio @ Lovable x Young Founders of London Hackathon"
+        name_en: "2nd Prize @ Lovable x Young Founders of London Hackathon"
+        date: "25/01"
+        url: "https://www.linkedin.com/posts/fgiraldezc_what-can-a-group-of-young-spanish-builders-activity-7421936535396073472-GDUh"
+      - name: "NodoMentor @ La Fábrica de Sevilla"
+        date: "30/01 - 05/02"
+        url: "https://www.linkedin.com/posts/newyearemprendedor-ugcPost-7424038718103068672-nlNE"
+      - name: "HackEurope"
+        date: "21/02 - 22/02"
+        status: "pending"
+      - name_es: "Organizar Olimpiada Informática Andaluza 2026"
+        name_en: "Organize Andalusian Olympiad in Informatics 2026"
+        date: "06/03"
+        status: "pending"
+
+  - year: 2025
+    events:
+      - name_es: "2º Puesto @ Olimpiada Informática Andaluza"
+        name_en: "2nd Place @ Andalusian Olympiad in Informatics"
+        date: "14/02"
+        url: "https://www.informatica.us.es/index.php/noticias/ganadores-de-la-ix-olimpiada-informatica-de-sevilla-2025"
+      - name: "PalistApp"
+        date: "10/04"
+        url: "https://www.palistapp.com"
+      - name_es: "Juez Voluntario @ Ada Byron"
+        name_en: "Volunteer Judge @ Ada Byron"
+        date: "25/04"
+        url: "https://www.linkedin.com/posts/pablo-davila-herrero_adabyron-algoritmia-programaciaejn-ugcPost-7322524164878180352-Tvhe"
+      - name_es: "Administrador del CAUS"
+        name_en: "CAUS Administrator"
+        date: "16/06 - ~"
+        url: "https://clubalgoritmiaus.es/news/2025-06-16-resultados-elecciones-caus-2025"
+      - name: "Sputnik"
+        date: "30/09 - 02/12"
+        sub:
+          - name: "BootCamp"
+            date: "30/09 - 01/10"
+            url: "https://www.linkedin.com/posts/fgiraldezc_hace-una-semana-finaliz%C3%B3-mi-participaci%C3%B3n-activity-7382011140987326465-b4RC"
+          - name: "TechCamp"
+            date: "27/10 - 28/10"
+          - name: "Start-up Camp"
+            date: "01/12 - 02/12"
+      - name_es: "Voluntario @ NASA SpaceApps 2025"
+        name_en: "Volunteer @ NASA SpaceApps 2025"
+        date: "03/10 - 05/10"
+        url: "https://www.linkedin.com/posts/fernando-gir%C3%A1ldez-curquejo-116527295_otro-a%C3%B1o-m%C3%A1s-se-ha-organizado-el-nasa-international-activity-7381414577470779392-uKVQ"
+      - name_es: "Voluntario @ CIABIOMED I"
+        name_en: "Volunteer @ CIABIOMED I"
+        date: "23/10 - 24/10"
+        url: "https://www.linkedin.com/posts/fgiraldezc_hace-unas-semanas-tuve-la-oportunidad-de-activity-7396874342590119937-C-9F"
+      - name_es: "4ª Edición High Impact Leaders"
+        name_en: "4th Edition High Impact Leaders"
+        date: "24/10 - 12/12"
+        url: "https://www.linkedin.com/posts/ugcPost-7406035473242140672-i38Z"
+      - name_es: "Alumno interno - Microcontroladores"
+        name_en: "Research Intern - Microcontrollers"
+        date: "30/10 - ~"
+      - name_es: "Profesor de Programación @ Academia Conoser"
+        name_en: "Programming Teacher @ Academia Conoser"
+        date: "07/11 - 09/01/26"
+      - name: "CTO @ HomiMatch"
+        date: "11/11 - ~"
+        url: "https://homimatch.com/"
+      - name_es: "3er Premio y Premio Ciberseguridad por INCIBE @ 30ª Edición Start-up Weekend TechStars"
+        name_en: "3rd Prize and Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars"
+        date: "21/11 - 23/11"
+        url: "https://www.linkedin.com/posts/fgiraldezc_rittai-swsevilla30-sevilla-activity-7398834330963415040-tpg-"
+
+  - year: 2024
+    events:
+      - name_es: "Voluntario @ NASA SpaceApps 2024"
+        name_en: "Volunteer @ NASA SpaceApps 2024"
+        date: "04/10 - 06/10"
+        url: "https://www.linkedin.com/posts/fernando-gir%C3%A1ldez-curquejo-116527295_nasa-space-apps-spain-linkedin-activity-7249009025097318400-Kt9A"
+
+  - year: 2023
+    events:
+      - name_es: "Participante @ NASA SpaceApps 2023"
+        name_en: "Participant @ NASA SpaceApps 2023"
+        date: "06/10 - 08/10"
+
+comunidades:
+  - "GoExponential"
+  - "Emprendus"

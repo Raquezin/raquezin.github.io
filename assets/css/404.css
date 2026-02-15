@@ -1,0 +1,26 @@
+.not-found {
+  max-width: 56ch;
+  margin: calc(var(--spacing) * 1.5) 0 0;
+}
+
+.not-found-code {
+  margin: 0 0 calc(var(--spacing) * 0.2);
+  color: var(--color-muted);
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', monospace;
+  font-size: calc(var(--size) * 1.5);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+.not-found h1 {
+  margin-bottom: calc(var(--spacing) * 0.6);
+}
+
+.not-found-joke {
+  margin-bottom: calc(var(--spacing) * 1);
+  color: var(--color-muted);
+}
+
+.not-found-home {
+  font-weight: 600;
+}

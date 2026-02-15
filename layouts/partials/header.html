@@ -1,0 +1,25 @@
+<a class="skip-link" href="#main-content">{{ cond (eq .Site.Language.Lang "es") "Saltar al contenido" "Skip to content" }}</a>
+
+<div class="header-inner">
+  <div class="header-top">
+    <a href="{{ relURL .Site.Home.RelPermalink }}" class="title"><h1>{{ .Site.Title }}</h1></a>
+    <div class="header-actions">
+      <button class="theme-toggle theme-toggle--mobile" aria-label="Toggle theme">
+        <span class="icon-sun">{{ os.ReadFile "assets/icons/sun.svg" | safeHTML }}</span>
+        <span class="icon-moon">{{ os.ReadFile "assets/icons/moon.svg" | safeHTML }}</span>
+        <span class="icon-system">{{ os.ReadFile "assets/icons/system.svg" | safeHTML }}</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        {{ os.ReadFile "assets/icons/menu.svg" | safeHTML }}
+      </button>
+    </div>
+  </div>
+  <div class="nav-wrapper" id="nav-wrapper">
+    <nav>{{- partial "nav.html" . -}}</nav>
+    <button class="theme-toggle theme-toggle--desktop" aria-label="Toggle theme">
+      <span class="icon-sun">{{ os.ReadFile "assets/icons/sun.svg" | safeHTML }}</span>
+      <span class="icon-moon">{{ os.ReadFile "assets/icons/moon.svg" | safeHTML }}</span>
+      <span class="icon-system">{{ os.ReadFile "assets/icons/system.svg" | safeHTML }}</span>
+    </button>
+  </div>
+</div>

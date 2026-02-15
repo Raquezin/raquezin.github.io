@@ -1,0 +1,53 @@
+<script>
+  (function () {
+    var html = document.documentElement;
+    var toggles = document.querySelectorAll(".theme-toggle");
+
+    // Cycle: system -> light -> dark -> system
+    function cycleTheme() {
+      var current = localStorage.getItem("theme") || "system";
+      var next;
+
+      if (current === "system") {
+        next = "light";
+      } else if (current === "light") {
+        next = "dark";
+      } else {
+        next = "system";
+      }
+
+      if (next === "system") {
+        html.removeAttribute("data-theme");
+        localStorage.removeItem("theme");
+      } else {
+        html.setAttribute("data-theme", next);
+        localStorage.setItem("theme", next);
+      }
+    }
+
+    for (var i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener("click", cycleTheme);
+    }
+
+    // Mobile menu toggle
+    var menuToggle = document.getElementById("menu-toggle");
+    var navWrapper = document.getElementById("nav-wrapper");
+
+    menuToggle.addEventListener("click", function () {
+      var isOpen = navWrapper.classList.toggle("nav-open");
+      menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      var isClickInsideNav = navWrapper.contains(event.target);
+      var isClickOnToggle = menuToggle.contains(event.target);
+      var isMenuOpen = navWrapper.classList.contains("nav-open");
+
+      if (isMenuOpen && !isClickInsideNav && !isClickOnToggle) {
+        navWrapper.classList.remove("nav-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+</script>
