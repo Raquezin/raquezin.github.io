@@ -23,11 +23,13 @@ years:
         url: "https://www.linkedin.com/posts/newyearemprendedor-ugcPost-7424038718103068672-nlNE"
       - name: "HackEurope"
         date: "21/02 - 22/02"
-        status: "pending"
+        url: "https://www.linkedin.com/posts/fgiraldezc_30-hours-3-cities-1000-builders-just-activity-7434889558040866816-X5C5"
       - name_es: "Organizar Olimpiada Informática Andaluza 2026"
         name_en: "Organize Andalusian Olympiad in Informatics 2026"
         date: "06/03"
-        status: "pending"
+      - name: "HackUPC"
+        date: "24/04 - 26/04"
+        status: pending
 
   - year: 2025
     events:
@@ -78,7 +80,7 @@ years:
         date: "11/11 - ~"
         url: "https://homimatch.com/"
       - name_es: "3er Premio y Premio Ciberseguridad por INCIBE @ 30ª Edición Start-up Weekend TechStars"
-        name_en: "3rd Prize and Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars"
+        name_en: "3rd Prize & Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars"
         date: "21/11 - 23/11"
         url: "https://www.linkedin.com/posts/fgiraldezc_rittai-swsevilla30-sevilla-activity-7398834330963415040-tpg-"
 
