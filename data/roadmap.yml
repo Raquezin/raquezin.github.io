@@ -27,6 +27,10 @@ years:
       - name_es: "Organizar Olimpiada Informática Andaluza 2026"
         name_en: "Organize Andalusian Olympiad in Informatics 2026"
         date: "06/03"
+      - name_es: "1er Puesto Categoría A/B y 4º Puesto General @ Ada Byron Andalucía"
+        name_en: "1st Place Category A/B & 4th Place General @ Ada Byron Andalusian"
+        date: "17/04"
+        url: "https://www.linkedin.com/posts/fgiraldezc_english-below-mi-primer-ada-byron-el-ugcPost-7455336280516734976-qNdP"
       - name: "HackUPC"
         date: "24/04 - 26/04"
         status: pending
