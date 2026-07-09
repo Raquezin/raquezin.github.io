@@ -1,0 +1,1 @@
+(function(){for(var t=document.querySelectorAll(".roadmap-year-label"),e=0;e<t.length;e++)t[e].addEventListener("click",function(){this.parentElement&&this.parentElement.classList.toggle("collapsed")})})()
