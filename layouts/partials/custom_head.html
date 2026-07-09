@@ -1,0 +1,2 @@
+{{- $themeInit := resources.Get "js/theme-init.js" | minify | fingerprint -}}
+<script src="{{ $themeInit.RelPermalink }}"></script>

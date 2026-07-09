@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="content">
+  {{ .Content }}
+  {{ if .Data.Singular }}
+    <h3 class="blog-filter">{{ i18n "filtering-for" }} "{{ .Title }}"</h3>
+  {{ end }}
+  <ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+      <span class="blog-post-date">
+        <i>
+          {{ partial "page_date.html" . }}
+        </i>
+      </span>
+      <span class="title-and-badge">
+        {{ if .Params.link }}
+          {{ partial "external_link.html" (dict "href" .Params.link "text" (printf "%s ↪" .Title)) }}
+        {{ else }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+        {{ partial "vibecode_badge.html" . }}
+      </span>
+    </li>
+    {{ else }}
+    <li>{{ i18n "no-posts" }}</li>
+    {{ end }}
+  </ul>
+  {{ if not .Data.Singular }}
+    <div>
+      {{ range .Site.Taxonomies.tags }}
+        {{ partial "tag_link.html" .Page }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}

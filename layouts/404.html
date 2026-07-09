@@ -1,0 +1,26 @@
+{{ define "head" }}
+{{ $notFoundCSS := resources.Get "css/404.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $notFoundCSS.RelPermalink }}">
+{{ end }}
+
+{{ define "title" }}404{{ end }}
+
+{{ define "main" }}
+{{ $isES := eq .Site.Language.Lang "es" }}
+<section class="not-found">
+  <p class="not-found-code">404</p>
+  <h1>{{ if $isES }}Página no encontrada{{ else }}Page not found{{ end }}</h1>
+  <p class="not-found-joke">
+    {{ if $isES }}
+      Intenté arreglarlo con <code>sudo</code>, pero esta URL no está en el <code>PATH</code>.
+    {{ else }}
+      I tried fixing it with <code>sudo</code>, but this URL is not in <code>PATH</code>.
+    {{ end }}
+  </p>
+  <p>
+    <a class="not-found-home" href="{{ .Site.Home.RelPermalink }}">
+      {{ if $isES }}Volver al inicio{{ else }}Go back home{{ end }}
+    </a>
+  </p>
+</section>
+{{ end }}

@@ -1,0 +1,29 @@
+{{- $title := .Title | default .Site.Title -}}
+{{- $siteDescription := .Site.Params.description | default "" -}}
+{{- $summaryOrSiteDescription := $siteDescription -}}
+{{- if .IsPage -}}
+  {{- $summaryOrSiteDescription = .Summary | default $siteDescription -}}
+{{- end -}}
+{{- $description := .Description | default $summaryOrSiteDescription -}}
+{{- $author := .Params.author | default "" -}}
+{{- $keywords := slice -}}
+{{- if .IsPage -}}
+  {{- with .Params.tags -}}
+    {{- $keywords = . -}}
+  {{- end -}}
+{{- else -}}
+  {{- range $terms := .Site.Taxonomies -}}
+    {{- range $term, $_ := $terms -}}
+      {{- $keywords = $keywords | append $term -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<meta name="title" content="{{ $title }}" />
+<meta name="description" content="{{ $description }}" />
+<meta name="author" content="{{ $author }}" />
+<meta name="keywords" content="{{ delimit $keywords ", " }}" />
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}

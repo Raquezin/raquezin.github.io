@@ -1,0 +1,21 @@
+{{ range .Site.Menus.main.ByWeight }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+
+<!-- Convert this page's translations into a dict -->
+{{ $translations := dict }}
+{{ range .Translations }}
+  {{ $translations = merge $translations (dict .Language.Lang .) }}
+{{ end }}
+
+<!-- Create a link to every translation -->
+{{ range where hugo.Sites "Language.Lang" "!=" .Page.Lang }}
+  {{ $lang := .Language.Lang }}
+  {{ with (index $translations $lang) }}
+    <a href="{{ .RelPermalink }}">{{ .Language.Label }}</a>
+  {{ else }}
+    {{ if not $.Params.hideUntranslated }}
+      <a class="disabled" role="link" aria-disabled="true">{{ .Language.Label }}</a>
+    {{ end }}
+  {{ end }}
+{{ end }}

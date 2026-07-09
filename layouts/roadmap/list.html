@@ -1,0 +1,61 @@
+{{ define "head" }}
+{{ $roadmapCSS := resources.Get "css/roadmap.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $roadmapCSS.RelPermalink }}">
+{{ end }}
+
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="content">
+  {{ .Content }}
+
+  <div class="roadmap-tree">
+    {{ $lang := site.Language.Lang }}
+    {{ $nameKey := printf "name_%s" $lang }}
+    {{ $dateKey := printf "date_%s" $lang }}
+    {{ $presentWord := cond (eq $lang "es") "presente" "present" }}
+ 
+    {{ range $yi, $y := sort hugo.Data.roadmap.years "year" "desc" }}
+    <div class="roadmap-year">
+      <div class="roadmap-year-label">{{ $y.year }}/</div>
+      <ul class="roadmap-entries">
+        {{ range $ei, $e := collections.Reverse $y.events }}
+        {{ $eName := or (index $e $nameKey) $e.name $e.name_es $e.name_en }}
+        {{ $eDate := or (index $e $dateKey) $e.date }}
+        {{ $eDate = replace $eDate "~" $presentWord }}
+        {{ $eLink := dict "href" $e.url "text" $eName }}
+        <li>
+          <div class="roadmap-line{{ if eq $e.status "pending" }} roadmap-pending{{ end }}">
+            <span class="roadmap-date">{{ $eDate }}</span>
+            <span class="roadmap-name">
+              {{ if $e.url }}{{ partial "external_link.html" $eLink }}{{ else }}{{ $eName }}{{ end }}
+            </span>
+          </div>
+          {{ with $e.sub }}
+          <ul class="roadmap-sub-entries">
+            {{ range $si, $s := collections.Reverse . }}
+            {{ $sName := or (index $s $nameKey) $s.name $s.name_es $s.name_en }}
+            {{ $sDate := or (index $s $dateKey) $s.date }}
+            {{ $sDate = replace $sDate "~" $presentWord }}
+            {{ $sLink := dict "href" $s.url "text" $sName }}
+            <li>
+              <div class="roadmap-sub-line">
+                <span class="roadmap-sub-date">{{ $sDate }}</span>
+                <span class="roadmap-sub-name">{{ if $s.url }}{{ partial "external_link.html" $sLink }}{{ else }}{{ $sName }}{{ end }}</span>
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{- $roadmapJS := resources.Get "js/roadmap.js" | minify | fingerprint -}}
+<script src="{{ $roadmapJS.RelPermalink }}" defer></script>
+{{ end }}
