@@ -25,7 +25,7 @@ My technical interests revolve around **competitive programming**, **hackathons*
 
 - **Community & Leadership:** Leading the [Club de Algoritmia de la Universidad de Sevilla](https://clubalgoritmiaus.es/news/2025-06-16-resultados-elecciones-caus-2025) as Admin and helping organize the Olimpiada Informática de Andalucía (OIA).
 - **Hackathons & Competitions:**
-  - [1st Place Category A/B & 4th Place General @ Ada Byron Andalusian](https://www.linkedin.com/posts/fgiraldezc_english-below-mi-primer-ada-byron-el-ugcPost-7455336280516734976-qNdP) (2026).
+  - [1st Place Category A/B & 4th Place General @ AdaByron Andalusian](https://www.linkedin.com/posts/fgiraldezc_english-below-mi-primer-ada-byron-el-ugcPost-7455336280516734976-qNdP) (2026).
   - [2nd Place @ Andalusian Olympiad in Informatics](https://www.informatica.us.es/index.php/noticias/ganadores-de-la-ix-olimpiada-informatica-de-sevilla-2025) (2025).
   - [3rd Prize & Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars](https://www.linkedin.com/posts/fgiraldezc_rittai-swsevilla30-sevilla-activity-7398834330963415040-tpg-) (2025).
   - [2nd Prize @ Lovable x Young Founders of London Hackathon](https://www.linkedin.com/posts/fgiraldezc_what-can-a-group-of-young-spanish-builders-activity-7421936535396073472-GDUh) (2026).
