@@ -8,7 +8,7 @@ The national standard platform for Spanish canoeing data analytics, tracking res
 
 ---
 
-**Status:** Active development (since April 2024) · [palistapp.com](https://www.palistapp.com)
+**Status:** Active development (since April 2025) · [palistapp.com](https://www.palistapp.com)
 
 ## The Problem
 
@@ -25,6 +25,6 @@ I built the entire stack from scratch focusing on performance and data integrity
 
 ## Impact & Numbers
 
-The launch was explosive. Within the first 96 hours, the platform received over **100,000 pageviews** and handled the traffic spike seamlessly on its free-tier infrastructure.
+The launch was explosive. Within the first 96 hours, the platform received and processed over **100,000 requests** and handled the traffic spike seamlessly on its free-tier infrastructure.
 
 PalistApp effectively became the industry standard for the sport overnight. It is now the primary resource used by athletes, coaches, and the national federation, replacing the government’s own legacy infrastructure through sheer utility and superior UX.

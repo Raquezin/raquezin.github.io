@@ -8,7 +8,7 @@ La plataforma estándar nacional de análisis de datos del piragüismo español,
 
 ---
 
-**Estado:** En desarrollo activo (desde abril 2024) · [palistapp.com](https://www.palistapp.com)
+**Estado:** En desarrollo activo (desde abril 2025) · [palistapp.com](https://www.palistapp.com)
 
 ## El Problema
 
@@ -25,6 +25,6 @@ Desarrollé todo el stack desde cero enfocándome en el rendimiento y la integri
 
 ## Impacto y Números
 
-El lanzamiento fue explosivo. En las primeras 96 horas, la plataforma recibió más de **100.000 visitas** y manejó el pico de tráfico sin problemas en su infraestructura gratuita.
+El lanzamiento fue explosivo. En las primeras 96 horas, la plataforma recibió y procesó más de **100.000 solicitudes** y manejó el pico de tráfico sin problemas en su infraestructura gratuita.
 
 PalistApp se convirtió de la noche a la mañana en el estándar del sector para este deporte. Ahora es el recurso principal utilizado por palistas, entrenadores y la federación nacional, reemplazando la infraestructura gubernamental por su utilidad y experiencia de usuario superior.

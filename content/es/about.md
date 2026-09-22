@@ -40,7 +40,7 @@ Mis intereses técnicos giran en torno a la **programación competitiva**, los *
 ## Experiencia
 
 - **CTO @ [HomiMatch](https://homimatch.com)** _(Abr 2025 - May 2026)_
-- **Becario @ [Universidad de Sevilla](https://www.us.es)** (Dpto. de Electrónica) _(Oct 2025 - Presente)_
+- **Becario @ [Universidad de Sevilla](https://www.us.es)** (Dpto. de Electrónica) _(Oct 2025 - Jun 2026)_
 - **Profesor @ [AcademiaConoser](https://www.academiaconoser.com)** (Comunicación y Algoritmos) _(Nov 2025 - Ene 2026)_
 
 ---

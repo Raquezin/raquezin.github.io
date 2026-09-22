@@ -40,7 +40,7 @@ My technical interests revolve around **competitive programming**, **hackathons*
 ## Experience
 
 - **CTO @ [HomiMatch](https://homimatch.com)** _(Apr 2025 - May 2026)_
-- **Intern @ [University of Seville](https://www.us.es)** (Dept. of Electronics) _(Oct 2025 - Present)_
+- **Intern @ [University of Seville](https://www.us.es)** (Dept. of Electronics) _(Oct 2025 - Jun 2026)_
 - **Teacher @ [AcademiaConoser](https://www.academiaconoser.com)** (Communication and Algorithms) _(Nov 2025 - Jan 2026)_
 
 ---
