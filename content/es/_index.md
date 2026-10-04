@@ -7,4 +7,4 @@ description: "Portfolio personal de Fernando Giráldez. Estudiante de Ingenierí
 
 Estudiante de Ingeniería Informática en la Universidad de Sevilla. Me gusta crear cosas útiles y aprender constantemente.
 
-Administro el [Club de Algoritmia](https://github.com/algoritmiaus) de la US y desarrollo [Palistapp](https://palistapp.com).
+Trabajo como Software Engineer en YouShift (YC W25), enseño en el [Club de Algoritmia](https://clubalgoritmiaus.es) de la US y desarrollo [PalistApp](https://palistapp.com).

@@ -1,5 +1,6 @@
 ---
 title: "PalistApp"
+description: "PalistApp, la plataforma nacional de resultados de piragüismo español: API en Go, PostgreSQL y React/TypeScript, ~100k peticiones en sus primeros 4 días."
 date: 2025-04-10
 ---
 

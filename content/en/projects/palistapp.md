@@ -1,5 +1,6 @@
 ---
 title: "PalistApp"
+description: "PalistApp, the national platform for Spanish canoeing results: Go API, PostgreSQL and React/TypeScript, ~100k requests in its first 4 days."
 date: 2025-04-10
 ---
 

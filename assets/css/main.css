@@ -380,7 +380,6 @@ li {
 
 .not-found {
   max-width: 56ch;
-  margin: calc(var(--spacing) * 1.5) 0 0;
 }
 
 .not-found-code {
@@ -671,7 +670,8 @@ main a:hover {
   }
 
   .roadmap-line {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0;
   }
 
   .roadmap-tree {

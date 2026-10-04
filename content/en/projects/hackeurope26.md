@@ -1,5 +1,6 @@
 ---
 title: "FactNews (HackEurope 2026)"
+description: "FactNews, built at HackEurope 2026: a news verification system where a council of LLMs cross-checks 20+ outlets to find consensus and contested facts."
 date: 2026-02-22
 tags: ["vibecode"]
 ---
