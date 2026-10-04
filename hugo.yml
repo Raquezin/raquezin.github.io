@@ -11,6 +11,21 @@ markup:
   highlight:
     noClasses: false
 
+menus:
+  main:
+    - identifier: about
+      pageRef: "/about"
+      weight: 10
+    - identifier: projects
+      pageRef: "/projects"
+      weight: 20
+    - identifier: blog
+      pageRef: "/blog"
+      weight: 30
+    - identifier: roadmap
+      pageRef: "/roadmap"
+      weight: 40
+
 params:
   social:
     - label: "GitHub"
@@ -28,39 +43,11 @@ languages:
     label: "🇬🇧"
     weight: 1
     contentDir: content/en
-    menu:
-      main:
-        - name: "About"
-          pageRef: "/about"
-          weight: 10
-        - name: "Projects"
-          pageRef: "/projects"
-          weight: 20
-        - name: "Blog"
-          pageRef: "/blog"
-          weight: 30
-        - name: "Roadmap"
-          pageRef: "/roadmap"
-          weight: 40
     params:
       lang_name: "English"
   es:
     label: "🇪🇸"
     weight: 2
     contentDir: content/es
-    menu:
-      main:
-        - name: "Sobre mí"
-          pageRef: "/about"
-          weight: 10
-        - name: "Proyectos"
-          pageRef: "/projects"
-          weight: 20
-        - name: "Blog"
-          pageRef: "/blog"
-          weight: 30
-        - name: "Roadmap"
-          pageRef: "/roadmap"
-          weight: 40
     params:
       lang_name: "Español"

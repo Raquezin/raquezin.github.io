@@ -9,7 +9,7 @@
     {{- $js := resources.Get "js/theme.js" | minify | fingerprint }}
     {{- $css := resources.Get "css/main.css" | minify | fingerprint }}
     {{- if hugo.IsProduction }}
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src '{{ $js.Data.Integrity }}'; style-src '{{ $css.Data.Integrity }}'; img-src 'self' data:; font-src 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src '{{ $js.Data.Integrity }}'; style-src '{{ $css.Data.Integrity }}'; img-src 'self'; form-action 'self'; upgrade-insecure-requests">
     {{- end }}
     <style>{{ $css.Content | safeCSS }}</style>
     <script>{{ $js.Content | safeJS }}</script>

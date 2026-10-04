@@ -1,9 +1,9 @@
 {{- $lang := site.Language.Lang -}}
 {{- $e := .entry -}}
-{{- $name := or (index $e (printf "name_%s" $lang)) $e.name $e.name_es $e.name_en -}}
-{{- $date := replace (or (index $e (printf "date_%s" $lang)) $e.date) "~" (i18n "present") -}}
+{{- $name := or (index $e (printf "name_%s" $lang)) $e.name -}}
+{{- $date := replace $e.date "~" (i18n "present") -}}
 <li>
-  <div class="roadmap-line{{ if eq $e.status "pending" }} roadmap-pending{{ end }}">
+  <div class="roadmap-line">
     <span class="roadmap-date">{{ range $i, $part := split $date " - " }}{{ if $i }}<span class="roadmap-date-sep"> - </span>{{ end }}{{ $part }}{{ end }}</span>
     <span class="roadmap-name">{{ if $e.url }}{{ partial "link.html" (dict "href" $e.url "text" $name) }}{{ else }}{{ $name }}{{ end }}</span>
   </div>

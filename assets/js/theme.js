@@ -9,18 +9,13 @@ try {
 } catch {}
 
 function applyTheme(theme) {
-  const isSystem = theme === "system";
-  if (isSystem) {
+  if (theme === "system") {
     delete html.dataset.theme;
   } else {
     html.dataset.theme = theme;
   }
   try {
-    if (isSystem) {
-      localStorage.removeItem("theme");
-    } else {
-      localStorage.setItem("theme", theme);
-    }
+    localStorage.setItem("theme", theme);
   } catch {}
 }
 

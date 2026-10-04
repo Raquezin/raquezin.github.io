@@ -7,11 +7,7 @@
     <li>
       <span class="blog-post-date">{{ partial "page_date.html" . }}</span>
       <span class="title-and-badge">
-        {{ if .Params.link }}
-          {{ partial "link.html" (dict "href" .Params.link "text" (printf "%s ↪" .Title)) }}
-        {{ else }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
+        {{ partial "link.html" (dict "href" (or .Params.link .RelPermalink) "text" (cond (isset .Params "link") (printf "%s ↪" .Title) .Title)) }}
         {{ partial "vibecode_badge.html" . }}
       </span>
     </li>
