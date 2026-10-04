@@ -1,7 +1,6 @@
 ---
 title: "PalistApp"
 date: 2025-04-10
-draft: false
 ---
 
 La plataforma estándar nacional de análisis de datos del piragüismo español, resultados, regatas y palistas.

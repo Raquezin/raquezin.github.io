@@ -1,5 +1,6 @@
 ---
 title: "Fernando Giráldez"
+description: "Personal portfolio of Fernando Giráldez. Computer Science student at the University of Seville."
 ---
 
 ## Solving problems with code

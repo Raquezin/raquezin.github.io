@@ -1,0 +1,11 @@
+<a class="skip-link" href="#main-content">{{ i18n "skip_to_content" }}</a>
+<div class="header-inner">
+  <a class="title" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+  <nav id="site-nav" popover>{{- partial "nav.html" . -}}</nav>
+  <button class="theme-toggle" type="button">
+    <span class="icon-sun" role="img" aria-label="{{ i18n "theme_light" }}">{{ partial "icon.html" "sun" }}</span>
+    <span class="icon-moon" role="img" aria-label="{{ i18n "theme_dark" }}">{{ partial "icon.html" "moon" }}</span>
+    <span class="icon-system" role="img" aria-label="{{ i18n "theme_system" }}">{{ partial "icon.html" "system" }}</span>
+  </button>
+  <button class="menu-toggle" type="button" popovertarget="site-nav" aria-label="{{ i18n "toggle_menu" }}">{{ partial "icon.html" "menu" }}</button>
+</div>

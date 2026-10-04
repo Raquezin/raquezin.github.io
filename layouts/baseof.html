@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett">
+    <link rel="icon" type="image/svg+xml" href="{{ (resources.Get "icons/logo.svg" | fingerprint).RelPermalink }}">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+
+    {{- partial "seo_tags.html" . -}}
+    {{- $themeInit := resources.Get "js/theme-init.js" | minify | fingerprint }}
+    {{- if hugo.IsProduction }}
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' '{{ $themeInit.Data.Integrity }}'; style-src 'self'; img-src 'self' data:; font-src 'self'; form-action 'self'; upgrade-insecure-requests">
+    {{- end }}
+
+    {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+    <script>{{ $themeInit.Content | safeJS }}</script>
+  </head>
+
+  <body>
+    <header>{{- partial "header.html" . -}}</header>
+    <main id="main-content">{{- block "main" . }}{{- end }}</main>
+    <footer>{{- partialCached "footer.html" . site.Language.Lang -}}</footer>
+    {{- $siteJS := resources.Get "js/site.js" | minify | fingerprint -}}
+    <script type="module" src="{{ $siteJS.RelPermalink }}"></script>
+  </body>
+</html>

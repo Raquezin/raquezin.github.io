@@ -1,7 +1,6 @@
 ---
 title: "FactNews (HackEurope 2026)"
 date: 2026-02-22
-draft: false
 tags: ["vibecode"]
 ---
 

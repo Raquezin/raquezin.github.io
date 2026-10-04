@@ -1,6 +1,5 @@
 ---
 title: "Sobre mí"
-draft: false
 ---
 
 > **TL;DR**

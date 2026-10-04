@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<div class="content">
+  {{ .Content }}
+  <ul class="blog-posts">
+    {{ range .Pages }}
+    <li>
+      <span class="blog-post-date">{{ partial "page_date.html" . }}</span>
+      <span class="title-and-badge">
+        {{ if .Params.link }}
+          {{ partial "link.html" (dict "href" .Params.link "text" (printf "%s ↪" .Title)) }}
+        {{ else }}
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ end }}
+        {{ partial "vibecode_badge.html" . }}
+      </span>
+    </li>
+    {{ else }}
+    <li>{{ i18n "no_posts" }}</li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

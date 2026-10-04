@@ -1,0 +1,6 @@
+{{- $remote := or (hasPrefix .href "https://") (hasPrefix .href "http://") -}}
+<a href="{{ .href }}"
+  {{- with .class }} class="{{ . }}"{{ end }}
+  {{- with .label }} aria-label="{{ . }}"{{ end }}
+  {{- with .title }} title="{{ . }}"{{ end }}
+  {{- if $remote }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .text }}</a>

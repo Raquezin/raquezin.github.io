@@ -1,7 +1,6 @@
 ---
 title: "Blue Lobster (HackUPC 2026)"
 date: 2026-04-26
-draft: false
 tags: ["vibecode"]
 ---
 

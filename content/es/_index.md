@@ -1,5 +1,6 @@
 ---
 title: "Fernando Giráldez"
+description: "Portfolio personal de Fernando Giráldez. Estudiante de Ingeniería Informática en la Universidad de Sevilla."
 ---
 
 ## Resolviendo problemas con código

@@ -1,0 +1,11 @@
+{{- with or .Description .Summary | plainify | htmlUnescape | strings.TrimSpace }}<meta name="description" content="{{ . }}">{{ end }}
+
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/schema.html" . }}
+
+{{- if .IsTranslated }}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+{{- end }}

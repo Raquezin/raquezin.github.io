@@ -1,0 +1,9 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if not .Date.IsZero }}
+<p class="byline">{{ partial "page_date.html" . }}{{ partial "vibecode_badge.html" . }}</p>
+{{ end }}
+<div class="content">
+  {{ .Content }}
+</div>
+{{ end }}

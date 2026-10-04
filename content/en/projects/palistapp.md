@@ -1,7 +1,6 @@
 ---
 title: "PalistApp"
 date: 2025-04-10
-draft: false
 ---
 
 The national standard platform for Spanish canoeing data analytics, tracking results, races, and competitors.

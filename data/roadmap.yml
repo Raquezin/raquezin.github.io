@@ -1,16 +1,3 @@
-# Roadmap - organizado por años como carpetas
-# Para añadir un evento: crea una entrada bajo el año correspondiente
-# Campos:
-#   name       - nombre por defecto (usado si no hay name_es/name_en)
-#   name_es    - nombre en español (opcional, sobreescribe name)
-#   name_en    - nombre en inglés (opcional, sobreescribe name)
-#   date       - fecha (obligatorio, usar ~ para "presente/present")
-#   date_es    - fecha en español (opcional, sobreescribe date)
-#   date_en    - fecha en inglés (opcional, sobreescribe date)
-#   url        - enlace (opcional)
-#   status     - "pending" para eventos futuros (opcional)
-#   sub        - lista de sub-eventos (opcional)
-
 years:
   - year: 2026
     events:
@@ -35,7 +22,6 @@ years:
         date: "24/04 - 26/04"
       - name: "HackSpain"
         date: "18/09 - 20/09"
-        status: true
 
   - year: 2025
     events:
