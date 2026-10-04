@@ -1,7 +1,7 @@
 ---
 title: "FactNews (HackEurope 2026)"
+description: "FactNews, creado en HackEurope 2026: un verificador de noticias en el que un consejo de LLMs contrasta más de 20 medios para encontrar consenso y hechos discutidos."
 date: 2026-02-22
-draft: false
 tags: ["vibecode"]
 ---
 

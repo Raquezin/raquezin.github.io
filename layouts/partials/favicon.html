@@ -1,5 +1,0 @@
-{{ with .Site.Params.favicon }}
-  {{ with resources.Get . | fingerprint }}
-<link rel="shortcut icon" href="{{ .RelPermalink }}" />
-  {{ end }}
-{{ end }}

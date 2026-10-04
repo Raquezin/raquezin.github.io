@@ -1,0 +1,8 @@
+<div class="footer-meta">
+  <small>© {{ now.Year }} {{ site.Copyright }} | {{ i18n "made_with" }}</small>
+  <div class="social-links">
+    {{- range site.Params.social }}
+    {{ partial "link.html" (dict "href" .href "text" (partial "icon.html" .icon) "class" "social-link" "label" .label "title" .label) }}
+    {{- end }}
+  </div>
+</div>

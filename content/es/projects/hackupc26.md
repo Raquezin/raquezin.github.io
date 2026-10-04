@@ -1,7 +1,7 @@
 ---
 title: "Blue Lobster (HackUPC 2026)"
+description: "Blue Lobster, creado en HackUPC 2026: un gemelo digital y copiloto de mantenimiento predictivo para la impresora 3D HP Metal Jet S100."
 date: 2026-04-26
-draft: false
 tags: ["vibecode"]
 ---
 

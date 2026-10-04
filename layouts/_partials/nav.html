@@ -1,0 +1,10 @@
+{{ range site.Menus.main }}
+  <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ else if $.HasMenuCurrent "main" . }} aria-current="true"{{ end }}>{{ T .Identifier }}</a>
+{{ end }}
+{{ range hugo.Sites }}
+  {{ if ne .Language.Lang $.Lang }}
+    {{ $target := .Home }}
+    {{ range where $.Translations "Lang" .Language.Lang }}{{ $target = . }}{{ end }}
+    <a href="{{ $target.RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}" aria-label="{{ .Params.lang_name }}" title="{{ .Params.lang_name }}">{{ .Language.Label }}</a>
+  {{ end }}
+{{ end }}

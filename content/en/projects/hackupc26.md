@@ -1,7 +1,7 @@
 ---
 title: "Blue Lobster (HackUPC 2026)"
+description: "Blue Lobster, built at HackUPC 2026: a digital twin and predictive maintenance co-pilot for the HP Metal Jet S100 3D printer."
 date: 2026-04-26
-draft: false
 tags: ["vibecode"]
 ---
 

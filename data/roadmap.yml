@@ -1,16 +1,3 @@
-# Roadmap - organizado por años como carpetas
-# Para añadir un evento: crea una entrada bajo el año correspondiente
-# Campos:
-#   name       - nombre por defecto (usado si no hay name_es/name_en)
-#   name_es    - nombre en español (opcional, sobreescribe name)
-#   name_en    - nombre en inglés (opcional, sobreescribe name)
-#   date       - fecha (obligatorio, usar ~ para "presente/present")
-#   date_es    - fecha en español (opcional, sobreescribe date)
-#   date_en    - fecha en inglés (opcional, sobreescribe date)
-#   url        - enlace (opcional)
-#   status     - "pending" para eventos futuros (opcional)
-#   sub        - lista de sub-eventos (opcional)
-
 years:
   - year: 2026
     events:
@@ -24,25 +11,34 @@ years:
       - name: "HackEurope"
         date: "21/02 - 22/02"
         url: "https://www.linkedin.com/posts/fgiraldezc_30-hours-3-cities-1000-builders-just-activity-7434889558040866816-X5C5"
-      - name_es: "Organizar Olimpiada Informática Andaluza 2026"
-        name_en: "Organize Andalusian Olympiad in Informatics 2026"
+      - name_es: "Organizador y Juez @ Olimpiada Informática Andaluza 2026"
+        name_en: "Organizer & Judge @ Andalusian Olympiad in Informatics 2026"
         date: "06/03"
-      - name_es: "1er Puesto Categoría A/B y 4º Puesto General @ AdaByron Andalucía"
-        name_en: "1st Place Category A/B & 4th Place General @ AdaByron Andalusian"
+      - name_es: "1er Puesto Categoría A/B y 4º de 69 General @ AdaByron Andalucía"
+        name_en: "1st Place Category A/B & 4th of 69 Overall @ AdaByron Andalusia"
         date: "17/04"
         url: "https://www.linkedin.com/posts/fgiraldezc_english-below-mi-primer-ada-byron-el-ugcPost-7455336280516734976-qNdP"
       - name: "HackUPC"
         date: "24/04 - 26/04"
+        url: "https://github.com/Raquezin/HackUPC26"
+      - name_es: "1er Puesto @ ETSII Emprende"
+        name_en: "1st Place @ ETSII Emprende"
+        date: "29/05"
+      - name: "Software Engineer @ YouShift (YC W25)"
+        date: "09/07 - ~"
       - name: "HackSpain"
         date: "18/09 - 20/09"
-        status: true
+        url: "https://github.com/Raquezin/HackSpain26"
 
   - year: 2025
     events:
       - name_es: "2º Puesto @ Olimpiada Informática Andaluza"
         name_en: "2nd Place @ Andalusian Olympiad in Informatics"
         date: "14/02"
-        url: "https://www.informatica.us.es/index.php/noticias/ganadores-de-la-ix-olimpiada-informatica-de-sevilla-2025"
+        url: "https://olimpiadainformatica.us.es/edicion-2025-ix-olimpiada/"
+      - name: "CTO @ HomiMatch"
+        date: "02/04 - 30/05/26"
+        url: "https://homimatch.com/"
       - name: "PalistApp"
         date: "10/04"
         url: "https://www.palistapp.com"
@@ -50,10 +46,10 @@ years:
         name_en: "Volunteer Judge @ AdaByron"
         date: "25/04"
         url: "https://www.linkedin.com/posts/pablo-davila-herrero_adabyron-algoritmia-programaciaejn-ugcPost-7322524164878180352-Tvhe"
-      - name_es: "Administrador del CAUS"
-        name_en: "CAUS Administrator"
+      - name_es: "Instructor y Webmaster @ CAUS"
+        name_en: "Instructor & Webmaster @ CAUS"
         date: "16/06 - ~"
-        url: "https://clubalgoritmiaus.es/news/2025-06-16-resultados-elecciones-caus-2025"
+        url: "https://clubalgoritmiaus.es/news/2025-06-resultados-elecciones-caus-2025"
       - name: "Sputnik"
         date: "30/09 - 02/12"
         sub:
@@ -64,8 +60,8 @@ years:
             date: "27/10 - 28/10"
           - name: "Start-up Camp"
             date: "01/12 - 02/12"
-      - name_es: "Voluntario @ NASA SpaceApps 2025"
-        name_en: "Volunteer @ NASA SpaceApps 2025"
+      - name_es: "Organizador @ NASA SpaceApps 2025"
+        name_en: "Organizer @ NASA SpaceApps 2025"
         date: "03/10 - 05/10"
         url: "https://www.linkedin.com/posts/fernando-gir%C3%A1ldez-curquejo-116527295_otro-a%C3%B1o-m%C3%A1s-se-ha-organizado-el-nasa-international-activity-7381414577470779392-uKVQ"
       - name_es: "Voluntario @ CIABIOMED I"
@@ -78,13 +74,10 @@ years:
         url: "https://www.linkedin.com/posts/ugcPost-7406035473242140672-i38Z"
       - name_es: "Alumno interno - Microcontroladores"
         name_en: "Research Intern - Microcontrollers"
-        date: "30/10 - 06/26"
+        date: "30/10 - 30/06/26"
       - name_es: "Profesor de Programación @ Academia Conoser"
         name_en: "Programming Teacher @ Academia Conoser"
         date: "07/11 - 09/01/26"
-      - name: "CTO @ HomiMatch"
-        date: "02/04 - 30/05/26"
-        url: "https://homimatch.com/"
       - name_es: "3er Premio y Premio Ciberseguridad por INCIBE @ 30ª Edición Start-up Weekend TechStars"
         name_en: "3rd Prize & Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars"
         date: "21/11 - 23/11"
@@ -92,8 +85,8 @@ years:
 
   - year: 2024
     events:
-      - name_es: "Voluntario @ NASA SpaceApps 2024"
-        name_en: "Volunteer @ NASA SpaceApps 2024"
+      - name_es: "Organizador @ NASA SpaceApps 2024"
+        name_en: "Organizer @ NASA SpaceApps 2024"
         date: "04/10 - 06/10"
         url: "https://www.linkedin.com/posts/fernando-gir%C3%A1ldez-curquejo-116527295_nasa-space-apps-spain-linkedin-activity-7249009025097318400-Kt9A"
 
@@ -102,7 +95,3 @@ years:
       - name_es: "Participante @ NASA SpaceApps 2023"
         name_en: "Participant @ NASA SpaceApps 2023"
         date: "06/10 - 08/10"
-
-comunidades:
-  - "GoExponential"
-  - "Emprendus"
