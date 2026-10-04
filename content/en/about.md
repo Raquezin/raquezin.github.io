@@ -40,7 +40,7 @@ My technical interests revolve around **competitive programming**, **hackathons*
 
 ## Experience
 
-- **Software Engineer @ YouShift** (YC W25) _(Jul 2026 - Present)_
+- **Software Engineer @ [YouShift (YC W25)](https://youshift.com)** _(Jul 2026 - Present)_
 - **Teacher @ [AcademiaConoser](https://www.academiaconoser.com)** (Communication and Algorithms) _(Nov 2025 - Jan 2026)_
 - **Research Intern @ [University of Seville](https://www.us.es)** (Dept. of Electronics) _(Oct 2025 - Jun 2026)_
 - **Instructor & Webmaster @ [CAUS](https://clubalgoritmiaus.es)** _(Jun 2025 - Present)_

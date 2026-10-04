@@ -26,9 +26,13 @@ years:
         date: "29/05"
       - name: "Software Engineer @ YouShift (YC W25)"
         date: "09/07 - ~"
+        url: "https://youshift.com"
       - name: "HackSpain"
         date: "18/09 - 20/09"
         url: "https://github.com/Raquezin/HackSpain26"
+      - name: "DurHack"
+        date: "14/11 - 15/11"
+        status: "pending"
 
   - year: 2025
     events:

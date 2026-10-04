@@ -27,6 +27,7 @@ menus:
       weight: 40
 
 params:
+  images: ["og.png"]
   social:
     - label: "GitHub"
       icon: github

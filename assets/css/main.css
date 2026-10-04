@@ -380,6 +380,12 @@ li {
   font-size: 1.3rem;
 }
 
+.roadmap-pending .roadmap-name,
+.roadmap-pending .roadmap-date {
+  color: var(--color-muted);
+  font-style: italic;
+}
+
 .not-found {
   max-width: 56ch;
 }
