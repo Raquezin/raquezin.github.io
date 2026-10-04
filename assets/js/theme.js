@@ -33,3 +33,7 @@ document.addEventListener("click", (event) => {
     applyTheme(next);
   }
 });
+
+matchMedia("(width > 768px)").addEventListener("change", () => {
+  document.getElementById("site-nav").hidePopover();
+});
