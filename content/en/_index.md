@@ -7,4 +7,4 @@ description: "Personal portfolio of Fernando Giráldez. Computer Science student
 
 Computer Science student at the University of Seville. I enjoy building useful things and constantly learning.
 
-I manage the [Algorithm Club](https://github.com/caus-us) at US and develop [Palistapp](https://palistapp.com).
+I manage the [Algorithm Club](https://github.com/algoritmiaus) at US and develop [Palistapp](https://palistapp.com).
