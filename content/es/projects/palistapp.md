@@ -8,7 +8,7 @@ La plataforma estándar nacional de análisis de datos del piragüismo español,
 
 ---
 
-**Estado:** En desarrollo activo (desde abril 2025) · [palistapp.com](https://www.palistapp.com)
+**Enlaces:** [Web](https://www.palistapp.com)
 
 ## El Problema
 

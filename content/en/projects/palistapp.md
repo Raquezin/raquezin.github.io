@@ -8,7 +8,7 @@ The national standard platform for Spanish canoeing data analytics, tracking res
 
 ---
 
-**Status:** Active development (since April 2025) · [palistapp.com](https://www.palistapp.com)
+**Links:** [Web](https://www.palistapp.com)
 
 ## The Problem
 
