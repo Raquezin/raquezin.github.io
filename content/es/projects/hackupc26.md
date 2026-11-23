@@ -13,7 +13,7 @@ Un sistema de mantenimiento predictivo y Co-Piloto Digital para la impresora 3D 
 
 ## Resumen
 
-Blue Lobster combina un gemelo digital sintético, planificación de mantenimiento por aprendizaje por refuerzo, paneles de telemetría y un asistente de diagnóstico respaldado por LLM para servir como espacio de trabajo para operadores industriales.
+Inés Dávila, Marc Altabella, Pablo Cobos y yo construimos Blue Lobster en 36 horas durante HackUPC en Barcelona. El gemelo digital simula el desgaste de los componentes de la impresora 3D HP Metal Jet S100. Desde el panel, un operador puede revisar las lecturas previas a un fallo y preguntarle al copiloto qué ocurrió.
 
 ## Arquitectura del Sistema
 

@@ -13,7 +13,7 @@ A predictive maintenance and Digital Co-Pilot system for the HP Metal Jet S100 3
 
 ## Overview
 
-Blue Lobster combines a synthetic digital twin, reinforcement learning maintenance planning, telemetry dashboards, and an LLM-backed diagnostic assistant to serve as an industrial operator workspace.
+Inés Dávila, Marc Altabella, Pablo Cobos and I built Blue Lobster in 36 hours at HackUPC in Barcelona. The digital twin simulates how the components of the HP Metal Jet S100 3D printer wear down. From the dashboard, an operator can review the readings leading up to a failure and ask the copilot what happened.
 
 ## System Architecture
 
