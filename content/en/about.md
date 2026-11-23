@@ -25,11 +25,12 @@ My technical interests revolve around **competitive programming**, **hackathons*
 
 - **Community & Leadership:** Instructor and Webmaster at the [Club de Algoritmia de la Universidad de Sevilla](https://clubalgoritmiaus.es/news/2025-06-resultados-elecciones-caus-2025) (CAUS), and organizer and judge at the Olimpiada Informática de Andalucía (OIA).
 - **Hackathons & Competitions:**
+  - [1st in the Accenture Track & 3rd in the Qube Research & Technologies × OpenAI CTF @ DurHack](https://github.com/raquezin/durhack26) (2026).
   - 1st Place @ ETSII Emprende, the university entrepreneurship competition (2026).
   - [1st Place Category A/B & 4th of 69 Overall @ AdaByron Andalusia](https://www.linkedin.com/posts/fgiraldezc_english-below-mi-primer-ada-byron-el-ugcPost-7455336280516734976-qNdP) (2026).
-  - [2nd Place @ Andalusian Olympiad in Informatics](https://olimpiadainformatica.us.es/edicion-2025-ix-olimpiada/) (2025).
-  - [3rd Prize & Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars](https://www.linkedin.com/posts/fgiraldezc_rittai-swsevilla30-sevilla-activity-7398834330963415040-tpg-) (2025).
   - [2nd Prize @ Lovable x Young Founders of London Hackathon](https://www.linkedin.com/posts/fgiraldezc_what-can-a-group-of-young-spanish-builders-activity-7421936535396073472-GDUh) (2026).
+  - [3rd Prize & Cybersecurity Award by INCIBE @ 30th Edition Start-up Weekend TechStars](https://www.linkedin.com/posts/fgiraldezc_rittai-swsevilla30-sevilla-activity-7398834330963415040-tpg-) (2025).
+  - [2nd Place @ Andalusian Olympiad in Informatics](https://olimpiadainformatica.us.es/edicion-2025-ix-olimpiada/) (2025).
   - Other participations: HackEurope, HackUPC, HackSpain, NASA SpaceApps, Sputnik.
 
 ## My Builds

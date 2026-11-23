@@ -30,9 +30,10 @@ years:
       - name: "HackSpain"
         date: "18/09 - 20/09"
         url: "https://github.com/Raquezin/HackSpain26"
-      - name: "DurHack"
+      - name_es: "1er Puesto en el reto de Accenture y 3er Puesto en el CTF de Qube Research & Technologies x OpenAI @ DurHack (Sight)"
+        name_en: "1st Place in the Accenture Track & 3rd Place in the Qube Research & Technologies x OpenAI CTF @ DurHack (Sight)"
         date: "14/11 - 15/11"
-        status: "pending"
+        url: "https://github.com/raquezin/durhack26"
 
   - year: 2025
     events:
